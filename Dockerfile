@@ -30,4 +30,3 @@ RUN apk update && apk add make && apk add gcc && apk add g++ && \
         # Remove build tools, which are no longer needed after installation
         apk del git && apk del make && apk del gcc && apk del g++ && apk del flex && apk del bison && apk del python-dev
 
-ENTRYPOINT /bin/sh
