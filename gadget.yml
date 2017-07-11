@@ -1,0 +1,16 @@
+spec: "0.0"
+name: gadget-chip-io
+uuid: b2164129-224b-4287-945e-284fc05893f6
+type: docker
+onboot:
+services:
+- name: gadget-chip-io
+  uuid: 9a30083e-7379-4663-bada-1751344135cb
+  image: ""
+  directory: "./"
+  net: ""
+  readonly: false
+  command: []
+  binds: ['/sys:/sys']
+  capabilities: ['SYS_RAWIO']
+  devices: ['/dev/mem']
