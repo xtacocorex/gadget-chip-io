@@ -1,5 +1,5 @@
 # ALPINE LINUX ARM WOOO!
-FROM armhf/alpine
+FROM arm32v6/alpine
 
 # Install tools needed to download and build the CHIP_IO library from source.
 RUN apk update && apk add make && apk add gcc && apk add g++ && \
